@@ -5,8 +5,12 @@ import './App.css';
 const App = () => {
   const [message, setMessage] = useState('');
 
-const handleButtonClick = () => {
-  setMessage('Hello');
+const handleButtonClick = async () => {
+  const response = await fetch(`http://localhost:3001`);
+  const json = await response.json();
+  const newMessage = json.message;
+  
+  setMessage(newMessage);
 }
   return (
     <div className="App">
