@@ -19,11 +19,6 @@ const handleButtonClick = async () => {
         {message && <p>{message}</p>}
         <button onClick={handleButtonClick}>Click me</button>
       </header>
-      
-      <p>This is another test paragraph</p>
-      <p>Another test for pushing</p>
-
-      <h3>This is a heading</h3>
     </div>
   );
 }
