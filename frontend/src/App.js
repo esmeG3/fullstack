@@ -22,6 +22,7 @@ const handleButtonClick = async () => {
       <p>
         This is a test paragraph 
       </p>
+      <p>This is another test paragraph</p>
     </div>
   );
 }
